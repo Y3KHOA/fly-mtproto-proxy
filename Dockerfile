@@ -8,4 +8,4 @@ RUN git clone https://github.com/TelegramMessenger/MTProxy.git /mtproxy && \
 WORKDIR /mtproxy
 EXPOSE 443
 
-CMD ./objs/bin/mtproto-proxy -u nobody -p 8888 -H 443 -S 0123456789abcdef0123456789abcdef --aes-pwd proxy-secret proxy-multi.conf -M 1
+CMD ./objs/bin/mtproto-proxy -u nobody -p 443 -H 443 -S 0123456789abcdef0123456789abcdef --aes-pwd proxy-secret proxy-multi.conf -M 1
